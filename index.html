@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Daniele Laudani — Portfolio</title>
+<script>
+  try {
+    if (localStorage.getItem('theme') === 'dark') {
+      document.documentElement.setAttribute('data-theme', 'dark');
+    }
+  } catch (e) {}
+</script>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Azeret+Mono:wght@400;500;600;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="nav">
+    <a class="nav__name" href="index.html">Daniele Laudani</a>
+    <nav class="nav__links" aria-label="Sezioni portfolio">
+      <a href="progetti-abact.html">PROGETTI_ABACT/</a>
+      <a href="ricerche-personali.html">RICERCHE_PERSONALI/</a>
+      <a href="clienti.html">CLIENTI/</a>
+    </nav>
+  </header>
+
+  <main class="hero">
+    <div class="hero__dotgrid" aria-hidden="true"></div>
+    <div class="hero__content">
+      <h1 class="hero__title">portfolio<span class="cursor" aria-hidden="true">_</span></h1>
+      <p class="hero__meta">a.a. 2025 / 2026</p>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer__inner">
+      <div>
+        <div class="footer__label">CONTATTI/</div>
+        <dl class="footer__contacts">
+          <div class="footer__row">
+            <dt>cellulare</dt>
+            <dd><a href="tel:+393735272127">+39 373 527 2127</a></dd>
+          </div>
+          <div class="footer__row">
+            <dt>e-mail</dt>
+            <dd><a href="mailto:daniele.laudani03@gmail.com">daniele.laudani03@gmail.com</a></dd>
+          </div>
+          <div class="footer__row">
+            <dt>instagram</dt>
+            <dd><a href="https://instagram.com/laudanieledesign" target="_blank" rel="noopener">@laudanieledesign</a></dd>
+          </div>
+        </dl>
+      </div>
+      <div class="theme-toggle">
+        <span class="theme-toggle__label">Dark theme</span>
+        <button type="button" class="theme-toggle__switch" id="theme-toggle" aria-pressed="false" aria-label="Attiva tema scuro">
+          <span class="theme-toggle__thumb" aria-hidden="true"></span>
+        </button>
+      </div>
+      <p class="footer__copy">&copy; 2026 Daniele Laudani. Tutti i diritti riservati.</p>
+    </div>
+  </footer>
+
+  <script src="script.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Progetti ABACT — Daniele Laudani</title>
+<script>
+  try {
+    if (localStorage.getItem('theme') === 'dark') {
+      document.documentElement.setAttribute('data-theme', 'dark');
+    }
+  } catch (e) {}
+</script>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Azeret+Mono:wght@400;500;600;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="nav">
+    <a class="nav__name" href="index.html">Daniele Laudani</a>
+    <nav class="nav__links" aria-label="Sezioni portfolio">
+      <a href="progetti-abact.html" aria-current="page">PROGETTI_ABACT/</a>
+      <a href="ricerche-personali.html">RICERCHE_PERSONALI/</a>
+      <a href="clienti.html">CLIENTI/</a>
+    </nav>
+  </header>
+
+  <main>
+    <div class="page-header">
+      <h1 class="page-header__title">progetti_abact/</h1>
+      <p class="page-header__desc">Lavori sviluppati durante il triennio in Design della Comunicazione Visiva: progetti editoriali, tipografici e digitali.</p>
+    </div>
+
+    <div class="projects">
+
+      <!-- WEB/PINTIFY -->
+      <section class="project" id="pintify">
+        <h2 class="project__title">
+          <button class="project__header" type="button" aria-expanded="false" aria-controls="pintify-panel">
+            <span class="project__header-text">Web/Pintify/</span>
+          </button>
+        </h2>
+        <div class="project__collapse">
+          <div class="project__collapse-inner" id="pintify-panel" inert>
+            <div class="project__grid">
+              <div>
+                <p class="project__desc">Progetto in team. È stato progettato e scritto un sito web di tipo informativo allo scopo di far conoscere l'universo della birra, la sua storia, la sua produzione e il suo prestigio mondiale.</p>
+                <a class="project__link" href="https://alepalee.github.io/Pintify/index.html" target="_blank" rel="noopener">Visita il sito ↗</a>
+                <dl class="specs">
+                  <div class="specs__row">
+                    <dt>Membri del progetto</dt>
+                    <dd>Daniele Laudani (design)<br>Mattia Leocata (css/javascript)<br>Alessio Palermo (html/css)<br>Daniel Perricone (design)</dd>
+                  </div>
+                </dl>
+              </div>
+              <div class="project__images cols-2">
+                <figure><img src="assets/img/pintify-mockup.jpg" alt="Mockup del sito Pintify su iMac"></figure>
+                <figure><img src="assets/img/pintify-detail.jpg" alt="Dettaglio della hero section di Pintify"></figure>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- GEDIT/COPERTINE -->
+      <section class="project" id="gedit-copertine">
+        <h2 class="project__title">
+          <button class="project__header" type="button" aria-expanded="false" aria-controls="gedit-copertine-panel">
+            <span class="project__header-text">Gedit/Copertine/</span>
+          </button>
+        </h2>
+        <div class="project__collapse">
+          <div class="project__collapse-inner" id="gedit-copertine-panel" inert>
+            <div class="project__grid">
+              <div>
+                <p class="project__desc">Progettazione di 3 copertine. Le prime due copertine fanno parte di una collana editoriale, mantenendo infatti la stessa grammatica visiva, la terza copertina è progettata per un fuori collana.</p>
+                <dl class="specs">
+                  <div class="specs__row"><dt>Formato copertina</dt><dd>10 x 15 cm</dd></div>
+                  <div class="specs__row"><dt>Largh. bandelle</dt><dd>7 cm</dd></div>
+                  <div class="specs__row"><dt>Largh. costa</dt><dd>1,5 cm</dd></div>
+                  <div class="specs__row"><dt>Tipografia collana</dt><dd>League Spartan</dd></div>
+                  <div class="specs__row"><dt>Tipografia fuori collana</dt><dd>Gazzetta</dd></div>
+                </dl>
+              </div>
+              <div class="project__images cols-1">
+                <figure><img src="assets/img/gedit-ernesto-franco.jpg" alt="Copertina di Storie fantastiche di isole vere, Ernesto Franco"><figcaption>Ernesto Franco — Storie fantastiche di isole vere</figcaption></figure>
+                <figure><img src="assets/img/gedit-sepulveda.jpg" alt="Copertina di Storia di una lumaca, Luis Sepúlveda"><figcaption>Luis Sepúlveda — Storia di una lumaca che scoprì l'importanza della lentezza</figcaption></figure>
+                <figure><img src="assets/img/gedit-carofiglio.jpg" alt="Copertina di Elogio dell'ignoranza e dell'errore, Gianrico Carofiglio"><figcaption>Gianrico Carofiglio — Elogio dell'ignoranza e dell'errore (fuori collana)</figcaption></figure>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- GD3/VARIAZIONI_VOLTO -->
+      <section class="project" id="variazioni-volto">
+        <h2 class="project__title">
+          <button class="project__header" type="button" aria-expanded="false" aria-controls="variazioni-volto-panel">
+            <span class="project__header-text">GD3/Variazioni_Volto/</span>
+          </button>
+        </h2>
+        <div class="project__collapse">
+          <div class="project__collapse-inner" id="variazioni-volto-panel" inert>
+            <div class="project__grid">
+              <div>
+                <p class="project__desc">È stato chiesto di trasformare un ritratto fotografico in un simbolo/pittogramma. Il progetto riprende un esercizio di Bruno Munari — Variazioni sul tema del viso umano (1964).</p>
+              </div>
+              <div class="project__images cols-1">
+                <figure><img src="assets/img/volto-ritratti.jpg" alt="Serie di ritratti a china, dal realistico al sintetico"><figcaption>Dal ritratto fotografico al segno essenziale</figcaption></figure>
+                <figure><img src="assets/img/volto-griglia.jpg" alt="Griglia di variazioni sul volto, stile organico e stile pieno"><figcaption>Variazioni sul tema del viso — due grammatiche a confronto</figcaption></figure>
+                <figure style="max-width:260px"><img src="assets/img/volto-logomark.png" alt="Marchio finale derivato dalle variazioni sul volto"><figcaption>Il segno finale</figcaption></figure>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- GD3/MILES_DAVIS -->
+      <section class="project" id="miles-davis">
+        <h2 class="project__title">
+          <button class="project__header" type="button" aria-expanded="false" aria-controls="miles-davis-panel">
+            <span class="project__header-text">GD3/Miles_Davis/</span>
+          </button>
+        </h2>
+        <div class="project__collapse">
+          <div class="project__collapse-inner" id="miles-davis-panel" inert>
+            <div class="project__grid">
+              <div>
+                <p class="project__desc">Trittico di manifesti realizzati in occasione del centenario dalla nascita di Davis. I manifesti tipografici traducono in linguaggio visivo i suoi insegnamenti e la sua eredità lasciata alla musica.</p>
+                <dl class="specs">
+                  <div class="specs__row"><dt>Formato</dt><dd>70 x 100 cm</dd></div>
+                  <div class="specs__row"><dt>Tipografia</dt><dd>Big Shoulders Display</dd></div>
+                </dl>
+              </div>
+              <div>
+                <div class="project__images cols-2" style="margin-bottom:18px;">
+                  <figure><img src="assets/img/miles-poster-1.jpg" alt="Manifesto tipografico: it's not the notes you play"></figure>
+                  <figure><img src="assets/img/miles-poster-2.jpg" alt="Manifesto tipografico: do not fear mistakes"></figure>
+                </div>
+                <div class="project__images cols-1" style="margin-bottom:18px;">
+                  <figure><img src="assets/img/miles-poster-main.jpg" alt="Manifesto Miles Davis 100, composizione a cerchi concentrici"></figure>
+                </div>
+                <div class="project__images gallery">
+                  <figure><img src="assets/img/miles-process-1.jpg" alt="Pagine di processo creativo, taccuino"><figcaption>Processo</figcaption></figure>
+                  <figure><img src="assets/img/miles-process-2.jpg" alt="Pagine di processo creativo, studi su griglia puntinata"></figure>
+                  <figure><img src="assets/img/miles-process-3.jpg" alt="Studi di lettering Miles Davis"></figure>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- GD3/DARE_TO_FAIL -->
+      <section class="project" id="dare-to-fail">
+        <h2 class="project__title">
+          <button class="project__header" type="button" aria-expanded="false" aria-controls="dare-to-fail-panel">
+            <span class="project__header-text">GD3/Dare_to_Fail/</span>
+          </button>
+        </h2>
+        <div class="project__collapse">
+          <div class="project__collapse-inner" id="dare-to-fail-panel" inert>
+            <div class="project__grid">
+              <div>
+                <p class="project__desc">Un pamphlet di 32 pagine che analizza e racconta due proposte di Marchio per Ford e mette in luce come anche in un progetto apparentemente perfetto, il fallimento possa sempre nascondersi dietro l'angolo.</p>
+                <dl class="specs">
+                  <div class="specs__row"><dt>Formato</dt><dd>A5 (148x210mm)</dd></div>
+                  <div class="specs__row"><dt>N&deg; pagine</dt><dd>32 pagine</dd></div>
+                  <div class="specs__row"><dt>Rilegatura</dt><dd>Punto metallico</dd></div>
+                  <div class="specs__row"><dt>Tipologia carta</dt><dd>Patinata opaca 150g/m3</dd></div>
+                  <div class="specs__row"><dt>Stampato a</dt><dd>Giugno, 2026</dd></div>
+                </dl>
+              </div>
+              <div>
+                <div class="project__images feature">
+                  <figure><img src="assets/img/dare-cover-teal.jpg" alt="Copertina teal del pamphlet Dare to fail su tavolo da taglio"></figure>
+                  <div class="feature__stack">
+                    <figure><img src="assets/img/dare-detail-pink.jpg" alt="Dettaglio pagina rosa con citazione"></figure>
+                    <figure><img src="assets/img/dare-spread-pink.jpg" alt="Doppia pagina rosa con titolo Il fallimento non è ancora la fine"></figure>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer__inner">
+      <div>
+        <div class="footer__label">CONTATTI/</div>
+        <dl class="footer__contacts">
+          <div class="footer__row">
+            <dt>cellulare</dt>
+            <dd><a href="tel:+393735272127">+39 373 527 2127</a></dd>
+          </div>
+          <div class="footer__row">
+            <dt>e-mail</dt>
+            <dd><a href="mailto:daniele.laudani03@gmail.com">daniele.laudani03@gmail.com</a></dd>
+          </div>
+          <div class="footer__row">
+            <dt>instagram</dt>
+            <dd><a href="https://instagram.com/laudanieledesign" target="_blank" rel="noopener">@laudanieledesign</a></dd>
+          </div>
+        </dl>
+      </div>
+      <div class="theme-toggle">
+        <span class="theme-toggle__label">Dark theme</span>
+        <button type="button" class="theme-toggle__switch" id="theme-toggle" aria-pressed="false" aria-label="Attiva tema scuro">
+          <span class="theme-toggle__thumb" aria-hidden="true"></span>
+        </button>
+      </div>
+      <p class="footer__copy">&copy; 2026 Daniele Laudani. Tutti i diritti riservati.</p>
+    </div>
+  </footer>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
