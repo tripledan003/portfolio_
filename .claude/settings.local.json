@@ -4,7 +4,17 @@
       "Bash(find \"C:\\\\Users\\\\traip\\\\Desktop\\\\Design\\\\lavoro\\\\2026\\\\THT\" -maxdepth 3)",
       "Bash(powershell -Command 'Add-Type -AssemblyName System.Drawing; foreach\\($f in @\\('\\\\''dare-cover-teal.jpg'\\\\'','\\\\''dare-detail-pink.jpg'\\\\'','\\\\''dare-spread-pink.jpg'\\\\''\\)\\){ $img = [System.Drawing.Image]::FromFile\\(\\(Resolve-Path $f\\)\\); Write-Output \\($f + '\\\\'': '\\\\'' + $img.Width + '\\\\''x'\\\\'' + $img.Height\\); $img.Dispose\\(\\) }')",
       "Bash(powershell -Command ' *)",
-      "Bash(powershell -Command 'Add-Type -AssemblyName System.Drawing; foreach\\($f in @\\('\\\\''tht_1.jpg'\\\\'','\\\\''tht_2.jpg'\\\\'','\\\\''tht_3.jpg'\\\\''\\)\\){ $img = [System.Drawing.Image]::FromFile\\(\\(Resolve-Path $f\\)\\); Write-Output \\($f + '\\\\'': '\\\\'' + $img.Width + '\\\\''x'\\\\'' + $img.Height\\); $img.Dispose\\(\\) }')"
+      "Bash(powershell -Command 'Add-Type -AssemblyName System.Drawing; foreach\\($f in @\\('\\\\''tht_1.jpg'\\\\'','\\\\''tht_2.jpg'\\\\'','\\\\''tht_3.jpg'\\\\''\\)\\){ $img = [System.Drawing.Image]::FromFile\\(\\(Resolve-Path $f\\)\\); Write-Output \\($f + '\\\\'': '\\\\'' + $img.Width + '\\\\''x'\\\\'' + $img.Height\\); $img.Dispose\\(\\) }')",
+      "Bash(git status *)",
+      "Bash(git checkout *)",
+      "Bash(git add *)",
+      "Bash(git commit -m ' *)",
+      "Bash(git push *)",
+      "Bash(gh pr create --title 'Swap Fronte/Retro captions on Venturagrumi/Oil bottle photos' --body ' *)",
+      "PowerShell(Get-Command gh -ErrorAction SilentlyContinue)",
+      "Bash(env)",
+      "Bash(git config *)",
+      "Bash(git remote *)"
     ]
   }
 }
