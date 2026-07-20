@@ -384,6 +384,8 @@ img{ max-width: 100%; display: block; }
   .project__images.cols-2,
   .project__images.cols-3{ grid-template-columns: repeat(2, 1fr); }
   .project__images.feature{ grid-template-columns: 1fr; }
+  .project{ padding: 12px 0; }
+  .project__header{ padding: 8px 0; }
 }
 
 @media (max-width: 560px){
