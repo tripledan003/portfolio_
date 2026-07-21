@@ -13,6 +13,7 @@
   --nav-pad-x: 48px;
   --nav-pad-y: 28px;
   --page-pad-x: 48px;
+  --nav-height: 84px;
 }
 
 :root[data-theme="dark"]{
@@ -26,7 +27,13 @@
 
 *{ margin:0; padding:0; box-sizing:border-box; }
 
+html{ scroll-behavior: smooth; }
+
 html, body{ background: var(--bg); color: var(--fg); }
+
+@media (prefers-reduced-motion: reduce){
+  html{ scroll-behavior: auto; }
+}
 
 ::selection{ background: var(--fg); color: var(--bg); }
 ::-moz-selection{ background: var(--fg); color: var(--bg); }
@@ -100,9 +107,16 @@ img{ max-width: 100%; display: block; }
   outline-offset: 4px;
 }
 
+/* ---------- ONE-PAGE SECTIONS ---------- */
+.page-section{
+  scroll-margin-top: var(--nav-height);
+  border-top: 1px solid var(--rule);
+}
+
 /* ---------- HOME HERO ---------- */
 .hero{
   position: relative;
+  scroll-margin-top: var(--nav-height);
   min-height: calc(100vh - 84px);
   display: flex;
   align-items: center;

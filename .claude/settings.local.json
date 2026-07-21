@@ -14,7 +14,11 @@
       "PowerShell(Get-Command gh -ErrorAction SilentlyContinue)",
       "Bash(env)",
       "Bash(git config *)",
-      "Bash(git remote *)"
+      "Bash(git remote *)",
+      "Bash(node -e ' *)",
+      "Bash(powershell -Command 'Add-Type -AssemblyName System.Drawing; $img = [System.Drawing.Image]::FromFile\\(\\(Resolve-Path '\\\\''img_professionale.png'\\\\''\\)\\); Write-Output \\($img.Width.ToString\\(\\) + '\\\\''x'\\\\'' + $img.Height.ToString\\(\\)\\); $img.Dispose\\(\\)')",
+      "Bash(git show *)",
+      "Bash(powershell -Command 'Add-Type -AssemblyName System.Drawing; $img = [System.Drawing.Image]::FromFile\\('\\\\''C:\\\\Users\\\\traip\\\\AppData\\\\Local\\\\Temp\\\\claude\\\\C--Users-traip-Desktop-daniele-laudani-portfolio-daniele-laudani-portfolio\\\\cb71c7d7-e232-4209-aa08-176a8bd4d42b\\\\scratchpad\\\\..\\\\..\\\\..\\\\..\\\\..\\\\..\\\\..\\\\tmp\\\\orig_check.png'\\\\'' -ErrorAction SilentlyContinue\\); if\\($img\\){ Write-Output \\($img.Width.ToString\\(\\) + '\\\\''x'\\\\'' + $img.Height.ToString\\(\\)\\); $img.Dispose\\(\\) } else { Write-Output '\\\\''failed to load'\\\\'' }')"
     ]
   }
 }
