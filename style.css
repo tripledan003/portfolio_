@@ -167,7 +167,7 @@ img{ max-width: 100%; display: block; }
 .hero__theme-toggle{
   position: absolute;
   left: 50%;
-  bottom: 40px;
+  bottom: 16px;
   transform: translateX(-50%);
 }
 
