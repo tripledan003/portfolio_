@@ -3,19 +3,61 @@ const heroTitle = document.querySelector('.hero__title');
 if (heroTitle) {
   const cursor = heroTitle.querySelector('.cursor');
   const textNode = Array.from(heroTitle.childNodes).find((node) => node.nodeType === Node.TEXT_NODE);
-  const fullText = textNode ? textNode.textContent : '';
+  const finalText = textNode ? textNode.textContent : '';
+  const greeting = 'ciao!';
+  const welcome = 'benvenuti nel mio ' + finalText;
   const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  function typeText(text, onDone) {
+    let i = 0;
+    (function typeNext() {
+      if (i < text.length) {
+        textNode.textContent += text[i];
+        i++;
+        setTimeout(typeNext, 40 + Math.random() * 60);
+      } else if (onDone) {
+        onDone();
+      }
+    })();
+  }
+
+  function deleteFromEnd(onDone) {
+    (function deleteNext() {
+      if (textNode.textContent.length > 0) {
+        textNode.textContent = textNode.textContent.slice(0, -1);
+        setTimeout(deleteNext, 40 + Math.random() * 60);
+      } else if (onDone) {
+        onDone();
+      }
+    })();
+  }
+
+  function deleteFromStart(remainingLength, onDone) {
+    (function deleteNext() {
+      if (textNode.textContent.length > remainingLength) {
+        textNode.textContent = textNode.textContent.slice(1);
+        setTimeout(deleteNext, 40 + Math.random() * 60);
+      } else if (onDone) {
+        onDone();
+      }
+    })();
+  }
 
   if (!prefersReducedMotion && textNode) {
     textNode.textContent = '';
-    let i = 0;
-    (function typeNext() {
-      if (i < fullText.length) {
-        textNode.textContent += fullText[i];
-        i++;
-        setTimeout(typeNext, 40 + Math.random() * 60);
-      }
-    })();
+    setTimeout(() => {
+      typeText(greeting, () => {
+        setTimeout(() => {
+          deleteFromEnd(() => {
+            typeText(welcome, () => {
+              setTimeout(() => {
+                deleteFromStart(finalText.length);
+              }, 500);
+            });
+          });
+        }, 500);
+      });
+    }, 500);
   }
 }
 
