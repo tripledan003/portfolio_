@@ -1,3 +1,24 @@
+const heroTitle = document.querySelector('.hero__title');
+
+if (heroTitle) {
+  const cursor = heroTitle.querySelector('.cursor');
+  const textNode = Array.from(heroTitle.childNodes).find((node) => node.nodeType === Node.TEXT_NODE);
+  const fullText = textNode ? textNode.textContent : '';
+  const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  if (!prefersReducedMotion && textNode) {
+    textNode.textContent = '';
+    let i = 0;
+    (function typeNext() {
+      if (i < fullText.length) {
+        textNode.textContent += fullText[i];
+        i++;
+        setTimeout(typeNext, 40 + Math.random() * 60);
+      }
+    })();
+  }
+}
+
 document.querySelectorAll('.project__header').forEach((header) => {
   const project = header.closest('.project');
   const panel = project.querySelector('.project__collapse-inner');

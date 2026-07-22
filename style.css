@@ -143,6 +143,15 @@ img{ max-width: 100%; display: block; }
   letter-spacing: -0.02em;
 }
 
+.hero__title[contenteditable="true"]{
+  cursor: text;
+  caret-color: var(--fg);
+}
+
+.hero__title[contenteditable="true"]:focus{
+  outline: none;
+}
+
 .cursor{ display: inline-block; animation: blink 1s steps(1) infinite; }
 @keyframes blink{ 50%{ opacity: 0; } }
 
@@ -153,6 +162,13 @@ img{ max-width: 100%; display: block; }
   letter-spacing: 0.2em;
   text-transform: uppercase;
   opacity: 0.55;
+}
+
+.hero__theme-toggle{
+  position: absolute;
+  left: 50%;
+  bottom: 40px;
+  transform: translateX(-50%);
 }
 
 @media (prefers-reduced-motion: reduce){ .cursor{ animation: none; } }
@@ -419,7 +435,7 @@ img{ max-width: 100%; display: block; }
   max-width: 1400px;
   margin: 0 auto;
   display: grid;
-  grid-template-columns: 1fr auto auto;
+  grid-template-columns: 1fr auto;
   gap: 40px;
   align-items: end;
 }
@@ -516,7 +532,6 @@ img{ max-width: 100%; display: block; }
   .footer{ padding: 40px 24px 32px; }
   .footer__inner{ grid-template-columns: 1fr; gap: 20px; }
   .footer__copy{ text-align: left; margin-top: 4px; }
-  .theme-toggle{ justify-content: space-between; }
 }
 
 /* ---------- LIGHTBOX ---------- */
