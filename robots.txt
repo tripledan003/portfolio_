@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://tripledan003.github.io/portfolio_/sitemap.xml
+Sitemap: https://danielelaudani.it/sitemap.xml

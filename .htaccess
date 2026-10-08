@@ -1,0 +1,12 @@
+# Show the custom 404 page for missing URLs
+ErrorDocument 404 /404.html
+
+RewriteEngine On
+
+# Send www to the bare domain so search engines see a single site
+RewriteCond %{HTTP_HOST} ^www\.danielelaudani\.it$ [NC]
+RewriteRule ^(.*)$ https://danielelaudani.it/$1 [R=301,L]
+
+# Send /index.html to / so the homepage has a single URL
+RewriteCond %{THE_REQUEST} \s/index\.html[\s?] [NC]
+RewriteRule ^index\.html$ https://danielelaudani.it/ [R=301,L]
