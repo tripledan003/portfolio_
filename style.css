@@ -171,6 +171,14 @@ img{ max-width: 100%; display: block; }
   transform: translateX(-50%);
 }
 
+.not-found__link{
+  margin-top: 18px;
+  font-size: 0.85rem;
+}
+
+.not-found__link a{ border-bottom: 1px solid var(--fg); }
+.not-found__link a:hover{ opacity: 0.6; }
+
 @media (prefers-reduced-motion: reduce){ .cursor{ animation: none; } }
 
 /* ---------- SECTION PAGE HEADER ---------- */
@@ -243,6 +251,40 @@ img{ max-width: 100%; display: block; }
 
 @media (max-width: 900px){
   .about{ grid-template-columns: 1fr; gap: 40px; padding: 48px 24px 56px; }
+}
+
+/* ---------- LEGAL PAGES ---------- */
+.legal{
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 0 var(--page-pad-x) 80px;
+}
+
+.legal__section{
+  padding: 28px 0;
+  border-top: 1px solid var(--rule);
+}
+
+.legal__section:first-child{ border-top: none; padding-top: 0; }
+
+.legal__title{
+  font-weight: 700;
+  font-size: 1.1rem;
+  letter-spacing: 0.01em;
+  margin-bottom: 12px;
+}
+
+.legal__text{
+  font-size: 0.92rem;
+  line-height: 1.7;
+  color: var(--fg);
+}
+
+.legal__text a{ border-bottom: 1px solid var(--rule); }
+.legal__text a:hover{ opacity: 0.6; }
+
+@media (max-width: 700px){
+  .legal{ padding: 0 24px 56px; }
 }
 
 /* ---------- PROJECT BLOCKS ---------- */
@@ -464,6 +506,22 @@ img{ max-width: 100%; display: block; }
 
 .footer__row dd:hover{ opacity: 0.6; }
 
+.footer__legal{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 6px;
+}
+
+.footer__privacy-link{
+  font-size: 0.72rem;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  color: var(--muted);
+}
+
+.footer__privacy-link:hover{ color: var(--fg); }
+
 .footer__copy{
   font-size: 0.72rem;
   color: var(--muted);
@@ -531,7 +589,8 @@ img{ max-width: 100%; display: block; }
   .projects{ padding: 0 24px 24px; }
   .footer{ padding: 40px 24px 32px; }
   .footer__inner{ grid-template-columns: 1fr; gap: 20px; }
-  .footer__copy{ text-align: left; margin-top: 4px; }
+  .footer__legal{ align-items: flex-start; margin-top: 4px; }
+  .footer__copy{ text-align: left; }
 }
 
 /* ---------- LIGHTBOX ---------- */
