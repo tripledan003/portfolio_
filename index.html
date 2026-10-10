@@ -100,7 +100,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Azeret+Mono:wght@400;500;600;900&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css?v=3">
+<link rel="stylesheet" href="style.css?v=4">
 </head>
 <body>
 
@@ -513,6 +513,35 @@
           <img src="assets/img/img_professionale.png" alt="Ritratto professionale di Daniele Laudani, grafico e graphic designer" loading="lazy" decoding="async">
         </div>
       </div>
+
+      <div class="contact" id="contatti">
+        <h3 class="contact__title">SCRIVIMI/</h3>
+        <p class="contact__intro">Hai un progetto in mente? Compila il modulo e ti rispondo il prima possibile.</p>
+        <form class="contact__form" id="contact-form" action="https://formsubmit.co/info@danielelaudani.it" method="POST">
+          <div class="field">
+            <label for="cf-name">Nome</label>
+            <input type="text" id="cf-name" name="name" autocomplete="name" required maxlength="100">
+          </div>
+          <div class="field">
+            <label for="cf-email">E-mail</label>
+            <input type="email" id="cf-email" name="email" autocomplete="email" required maxlength="150">
+          </div>
+          <div class="field field--full">
+            <label for="cf-message">Messaggio</label>
+            <textarea id="cf-message" name="message" rows="6" required maxlength="3000"></textarea>
+          </div>
+          <input type="text" name="_honey" class="visually-hidden" tabindex="-1" autocomplete="off" aria-hidden="true">
+          <input type="hidden" name="_subject" value="Nuovo messaggio dal portfolio">
+          <input type="hidden" name="_template" value="table">
+          <input type="hidden" name="_captcha" value="false">
+          <input type="hidden" name="_next" value="https://danielelaudani.it/?inviato=1#contatti">
+          <div class="field--full contact__actions">
+            <button type="submit" class="contact__submit">Invia messaggio</button>
+            <p class="contact__status" id="contact-status" role="status" aria-live="polite"></p>
+          </div>
+          <p class="contact__note field--full">Inviando il modulo acconsenti al trattamento dei dati per rispondere alla tua richiesta. Il messaggio viene recapitato tramite FormSubmit. Vedi la <a href="privacy-policy.html">Privacy Policy</a>.</p>
+        </form>
+      </div>
     </section>
 
   </main>
@@ -543,6 +572,6 @@
     </div>
   </footer>
 
-  <script src="script.js?v=2" defer></script>
+  <script src="script.js?v=3" defer></script>
 </body>
 </html>

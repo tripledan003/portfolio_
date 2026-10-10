@@ -156,3 +156,31 @@ if (navLinks.length && scrollSections.length) {
 
   scrollSections.forEach((section) => sectionObserver.observe(section));
 }
+
+const contactForm = document.getElementById('contact-form');
+
+if (contactForm) {
+  const status = document.getElementById('contact-status');
+  const submitBtn = contactForm.querySelector('.contact__submit');
+
+  contactForm.addEventListener('submit', async (event) => {
+    event.preventDefault();
+    status.textContent = 'Invio in corso…';
+    submitBtn.disabled = true;
+
+    try {
+      const response = await fetch('https://formsubmit.co/ajax/info@danielelaudani.it', {
+        method: 'POST',
+        headers: { 'Accept': 'application/json' },
+        body: new FormData(contactForm)
+      });
+      if (!response.ok) throw new Error('send failed');
+      contactForm.reset();
+      status.textContent = 'Messaggio inviato, grazie! Ti risponderò presto.';
+    } catch (e) {
+      status.textContent = 'Invio non riuscito. Riprova o scrivimi a info@danielelaudani.it.';
+    } finally {
+      submitBtn.disabled = false;
+    }
+  });
+}
